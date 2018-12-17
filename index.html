@@ -1,49 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="Author" content="Harold Roberson">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CSS Box and Forms Lab</title>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Internel CSS-->
     <link rel="stylesheet" href="styles.css">
-    
+  
 </head>
+
 <body>
     <h1>Book Information</h1>
 
-
-        <div class="book-info">
+    <div class="container">
+        <div class="row">
+        <div class="col-md-5 book-info">
             <label>Title of Book:</label>
-            <input type="text" name="bookTitle">
+                <input type="text" name="bookTitle">
             <br>
             <label>Author:</label>
-            <input type="text" name="bookAuthor">
+                <input type="text" name="bookAuthor">
             <br>
             <label>Date Published:</label>
-            <input type="text" name="date">
+                <input type="text" name="date">
         </div>
 
-        <div class="book-description">
+        <div class="col-md-5 book-description">
             <label>Fiction</label>
-            <input type="radio" name="radios" id="radion1" value="option1">
+                <input type="radio" name="radios" id="radion1" value="option1">
+                &nbsp;&nbsp;
             <label>Non-Fiction</label>
-            <input type="radio" name="radios" id="radio2" value="option2">
+                <input type="radio" name="radios" id="radio2" value="option2">
             <br>
             <label>Description of the book:</label>
-            <input type="text" name="bookDescription">
+                <input type="text" name="bookDescription">
             <br>
             <h5>Have you read this book?</h5>
             <label>Yes</label>
-            <input type="checkbox">
+                <input type="checkbox">
             <label>No</label>
-            <input type="checkbox">
+                <input type="checkbox">
             <h5>Did you like this book?</h5>
             <label>Yes</label>
-            <input type="checkbox">
+                <input type="checkbox">
             <label>No</label>
-            <input type="checkbox">
+                <input type="checkbox">
         </div>
+        </div>
+    </div>
 
 </body>
 </html>
